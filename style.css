@@ -1,0 +1,101 @@
+/*style du fichier accueil.php*/
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+
+    background-color: aqua;
+}
+
+nav{
+    background-color: #2449dc;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 40px;
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+
+    /* text */
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+}
+
+/* les elements a du header */
+
+nav a{
+    /*  bleu */
+    color: rgb(101, 255, 11);
+    text-decoration: none;
+    padding-right: 5%;
+
+}
+
+footer{
+    text-align: center;
+    padding-bottom: 10px;
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.rubrique{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+
+.evenement{    
+}
+
+.competitionResultat{
+    
+}
+
+.calendrier{
+    
+}
+
+.rubriqueElement{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+input, select {
+    width: 100%;
+    /* padding: 12px 20px; */
+    margin-bottom: 8px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+
+.inscription{
+    background-color: rgb(255, 247, 247);
+    
+    border-radius: 5px;
+
+    padding: 10px;
+}
+
+.connexion{
+    background-color: rgb(255, 247, 247);
+    
+    border-radius: 5px;
+
+    padding: 10px;
+}
