@@ -1,4 +1,8 @@
 <?php
+
+    session_start();
+
+
     // PDO = PHP Data Object
     // new PDO() = Créer un nouvel objet PDO
     // (host, user, password) = Paramètres de connexion
@@ -26,6 +30,22 @@
     
     <nav>
         <a href="Accueil.php">Accueil</a>
-        <a href="Connexion.php">Connexion</a>
-        <a href="Inscription.php">Inscription</a>
+
+        <?php
+            if (isset($_SESSION['connected'])){
+                if ($_SESSION['connected'] == true){
+                    // test si l'utilisateur est un administrateur
+                    if ($_SESSION['admin'] == true){
+                        echo '<a href="admin.php">Admin</a>';
+                    }
+                    echo '<a href="profil.php">Profil</a>';
+                    echo '<a href="function/deconnexion.php">Deconnexion</a>';
+                }
+            } else {
+                echo '<a href="connexion">Connexion</a>';
+                echo '<a href="inscription.php">Inscription</a>';
+            }
+        ?>     
+
     </nav>
+

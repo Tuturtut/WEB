@@ -45,6 +45,7 @@
                 if($password == $password2){
                     $request = "INSERT INTO UTILISATEURS (Nom, Prenom, Email, MotDePasse) VALUES ('$nom', '$prenom', '$email', '$password')";
                     $connexion->query($request);
+                    header('Refresh: 0; URL=accueil.php');  
                 }
                 else{
                     echo "Les mots de passe ne correspondent pas";
